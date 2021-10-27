@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <TabPane prefHeight="654.0" prefWidth="775.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Student Profiles">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <GridPane prefHeight="534.0" prefWidth="686.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="400.46661376953125" minHeight="10.0" prefHeight="349.1234436035156" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="255.61041259765625" minHeight="10.0" prefHeight="171.37655639648438" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                              <GridPane prefHeight="350.0" prefWidth="686.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.61041259765625" minWidth="10.0" prefWidth="24.266139030456543" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.61041259765625" minWidth="10.0" prefWidth="173.75990295410156" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="652.465503692627" minWidth="10.0" prefWidth="397.74009704589844" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="652.465503692627" minWidth="10.0" prefWidth="116.8131103515625" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="197.10986328125" minHeight="10.0" prefHeight="83.45414352416992" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="157.60362243652344" minHeight="10.0" prefHeight="26.545856475830078" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="157.60362243652344" minHeight="0.0" prefHeight="25.88958740234375" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="157.60362243652344" minHeight="0.0" prefHeight="27.668746948242188" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="157.60362243652344" minHeight="10.0" prefHeight="28.168746948242188" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="109.93487548828125" minHeight="10.0" prefHeight="26.863525390625" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="174.12234497070312" minHeight="10.0" prefHeight="27.668731689453125" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="174.4275360107422" minHeight="5.377655029296875" prefHeight="35.668731689453125" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="231.66818237304688" minHeight="7.331268310546875" prefHeight="27.15570068359375" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="157.77915954589844" minHeight="10.0" prefHeight="31.84429931640625" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="44.0" text="Name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="Major" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="Status" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Label text="Credits" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <TextField prefHeight="26.0" prefWidth="518.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                       <children>
+                                          <RadioButton mnemonicParsing="false" text="CS">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="group1" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <HBox prefHeight="26.0" prefWidth="17.0" />
+                                          <RadioButton mnemonicParsing="false" text="EE" toggleGroup="$group1" />
+                                          <HBox prefHeight="26.0" prefWidth="17.0" />
+                                          <RadioButton mnemonicParsing="false" text="ME" toggleGroup="$group1" />
+                                          <HBox prefHeight="26.0" prefWidth="17.0" />
+                                          <RadioButton mnemonicParsing="false" text="IT" toggleGroup="$group1" />
+                                          <HBox prefHeight="26.0" prefWidth="17.0" />
+                                          <RadioButton mnemonicParsing="false" text="BA" toggleGroup="$group1" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                       <children>
+                                          <RadioButton mnemonicParsing="false" text="Resident">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="group2" />
+                                             </toggleGroup></RadioButton>
+                                          <HBox prefHeight="28.0" prefWidth="20.0" />
+                                          <RadioButton mnemonicParsing="false" text="Non-Resident" toggleGroup="$group2" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                       <children>
+                                          <RadioButton disable="true" mnemonicParsing="false" text="Tristate">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="group3" />
+                                             </toggleGroup></RadioButton>
+                                          <HBox prefHeight="29.0" prefWidth="23.0" />
+                                          <RadioButton disable="true" mnemonicParsing="false" text="New York" toggleGroup="$group3" />
+                                          <HBox prefHeight="29.0" prefWidth="23.0" />
+                                          <RadioButton disable="true" mnemonicParsing="false" text="Connecticut" toggleGroup="$group3" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                       <children>
+                                          <RadioButton disable="true" mnemonicParsing="false" text="International">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="group4" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <HBox prefHeight="27.0" prefWidth="18.0" />
+                                          <CheckBox disable="true" mnemonicParsing="false" text="Study Abroad" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                       <children>
+                                          <TextField prefHeight="26.0" prefWidth="209.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                       <children>
+                                          <Button mnemonicParsing="false" text="Add Student" />
+                                          <HBox prefHeight="23.0" prefWidth="35.0" />
+                                          <Button mnemonicParsing="false" text="Remove Student" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                       <children>
+                                          <Button mnemonicParsing="false" text="Tuition Due" />
+                                          <HBox prefHeight="28.0" prefWidth="35.0" />
+                                          <Label prefHeight="18.0" prefWidth="0.0" text="\$" />
+                                          <TextField prefHeight="26.0" prefWidth="174.0" promptText="0.00" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </content>
+          </Tab>
+            <Tab text="Payments/Financial Aid">
+              <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                      <children>
+                          <GridPane prefHeight="534.0" prefWidth="686.0">
+                              <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              </columnConstraints>
+                              <rowConstraints>
+                                  <RowConstraints maxHeight="400.46661376953125" minHeight="10.0" prefHeight="349.1234436035156" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="255.61041259765625" minHeight="10.0" prefHeight="171.37655639648438" vgrow="SOMETIMES" />
+                              </rowConstraints>
+                              <children>
+                                  <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                                  <GridPane prefHeight="350.0" prefWidth="686.0">
+                                      <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.61041259765625" minWidth="10.0" prefWidth="24.266139030456543" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.61041259765625" minWidth="10.0" prefWidth="173.75990295410156" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="652.465503692627" minWidth="10.0" prefWidth="397.74009704589844" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="652.465503692627" minWidth="10.0" prefWidth="116.8131103515625" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                          <RowConstraints maxHeight="197.10986328125" minHeight="10.0" prefHeight="83.45414352416992" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="157.60362243652344" minHeight="10.0" prefHeight="26.545856475830078" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="157.60362243652344" minHeight="0.0" prefHeight="25.88958740234375" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="157.60362243652344" minHeight="0.0" prefHeight="27.668746948242188" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="157.60362243652344" minHeight="10.0" prefHeight="28.168746948242188" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="109.93487548828125" minHeight="10.0" prefHeight="26.863525390625" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="174.12234497070312" minHeight="10.0" prefHeight="27.668731689453125" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="174.4275360107422" minHeight="5.377655029296875" prefHeight="35.668731689453125" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="231.66818237304688" minHeight="7.331268310546875" prefHeight="27.15570068359375" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="157.77915954589844" minHeight="10.0" prefHeight="31.84429931640625" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                      <children>
+                                          <Label prefHeight="17.0" prefWidth="44.0" text="Name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label text="Major" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="Payment Date" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <TextField prefHeight="26.0" prefWidth="518.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                          <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                              <children>
+                                                  <RadioButton mnemonicParsing="false" text="CS">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="group5" />
+                                             </toggleGroup>
+                                                  </RadioButton>
+                                                  <HBox prefHeight="26.0" prefWidth="17.0" />
+                                                  <RadioButton mnemonicParsing="false" text="EE" toggleGroup="$group5" />
+                                                  <HBox prefHeight="26.0" prefWidth="17.0" />
+                                                  <RadioButton mnemonicParsing="false" text="ME" toggleGroup="$group5" />
+                                                  <HBox prefHeight="26.0" prefWidth="17.0" />
+                                                  <RadioButton mnemonicParsing="false" text="IT" toggleGroup="$group5" />
+                                                  <HBox prefHeight="26.0" prefWidth="17.0" />
+                                                  <RadioButton mnemonicParsing="false" text="BA" toggleGroup="$group5" />
+                                              </children>
+                                          </HBox>
+                                          <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                       <children>
+                                          <DatePicker />
+                                          <HBox prefHeight="27.0" prefWidth="27.0" />
+                                          <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="131.0" text="Pay" />
+                                       </children>
+                                          </HBox>
+                                          <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                              <children>
+                                                  <HBox prefHeight="23.0" prefWidth="35.0" />
+                                              </children>
+                                          </HBox>
+                                          <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                              <children>
+                                                  <Label prefHeight="18.0" prefWidth="0.0" text="\$" />
+                                                  <TextField prefHeight="26.0" prefWidth="174.0" promptText="0.00" />
+                                          <HBox prefHeight="28.0" prefWidth="26.0" />
+                                          <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="131.0" text="Set" />
+                                              </children>
+                                          </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                       <children>
+                                          <HBox prefHeight="28.0" prefWidth="7.0" />
+                                          <Label text="\$" />
+                                          <TextField prefHeight="26.0" prefWidth="188.0" promptText="0.00" />
+                                       </children>
+                                    </HBox>
+                                    <Label text="Payment Amount" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label text="Financial Aid Amount" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                      </children>
+                                  </GridPane>
+                              </children>
+                          </GridPane>
+                      </children>
+                  </VBox>
+              </content>
+            </Tab>
+            <Tab text="Process Tuition">
+              <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                      <children>
+                          <GridPane prefHeight="534.0" prefWidth="686.0">
+                              <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              </columnConstraints>
+                              <rowConstraints>
+                                  <RowConstraints maxHeight="400.46661376953125" minHeight="10.0" prefHeight="349.1234436035156" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="255.61041259765625" minHeight="10.0" prefHeight="171.37655639648438" vgrow="SOMETIMES" />
+                              </rowConstraints>
+                              <children>
+                                  <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                                  <GridPane prefHeight="350.0" prefWidth="686.0">
+                                      <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="565.0634155273438" minWidth="10.0" prefWidth="565.0634155273438" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.61041259765625" minWidth="10.0" prefWidth="112.93658447265625" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                          <RowConstraints maxHeight="197.10986328125" minHeight="10.0" prefHeight="39.76725769042969" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="300.0249252319336" minHeight="10.0" prefHeight="296.7327423095703" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <MenuBar prefHeight="21.0" prefWidth="289.0">
+                                            <menus>
+                                              <Menu mnemonicParsing="false" text="         Tuition         ">
+                                                <items>
+                                                  <MenuItem mnemonicParsing="false" text="Calculate Tuition Due" />
+                                                </items>
+                                              </Menu>
+                                              <Menu mnemonicParsing="false" text="      Print      ">
+                                                <items>
+                                                  <MenuItem mnemonicParsing="false" text="Roster" />
+                                                      <MenuItem mnemonicParsing="false" text="Roster by student name" />
+                                                      <MenuItem mnemonicParsing="false" text="Students who made payments" />
+                                                </items>
+                                              </Menu>
+                                              <Menu mnemonicParsing="false" text="        Help          ">
+                                                <items>
+                                                  <MenuItem mnemonicParsing="false" text="About" />
+                                                </items>
+                                              </Menu>
+                                            </menus>
+                                          </MenuBar>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                  </GridPane>
+                              </children>
+                          </GridPane>
+                      </children>
+                  </VBox>             
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </top>
+</BorderPane>
